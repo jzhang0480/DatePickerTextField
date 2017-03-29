@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  MainTableViewController.h
 //  DatePickerTextFieldDemo
 //
 //  Created by Javen on 2017/3/29.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface MainTableViewController : UITableViewController
 
 @end
-

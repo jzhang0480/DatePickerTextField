@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		8F2CA8B81E8AC47F005ECC29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2CA8B71E8AC47F005ECC29 /* main.m */; };
 		8F2CA8BB1E8AC47F005ECC29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2CA8BA1E8AC47F005ECC29 /* AppDelegate.m */; };
-		8F2CA8BE1E8AC47F005ECC29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2CA8BD1E8AC47F005ECC29 /* ViewController.m */; };
 		8F2CA8C11E8AC47F005ECC29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F2CA8BF1E8AC47F005ECC29 /* Main.storyboard */; };
 		8F2CA8C31E8AC47F005ECC29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F2CA8C21E8AC47F005ECC29 /* Assets.xcassets */; };
 		8F2CA8C61E8AC47F005ECC29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F2CA8C41E8AC47F005ECC29 /* LaunchScreen.storyboard */; };
+		8F2CA8D01E8AC4A1005ECC29 /* DatePickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2CA8CF1E8AC4A1005ECC29 /* DatePickerTextField.m */; };
+		8F2CA8D31E8AD048005ECC29 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2CA8D21E8AD048005ECC29 /* MainTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		8F2CA8B71E8AC47F005ECC29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8F2CA8B91E8AC47F005ECC29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8F2CA8BA1E8AC47F005ECC29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8F2CA8BC1E8AC47F005ECC29 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8F2CA8BD1E8AC47F005ECC29 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8F2CA8C01E8AC47F005ECC29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F2CA8C21E8AC47F005ECC29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F2CA8C51E8AC47F005ECC29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F2CA8C71E8AC47F005ECC29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F2CA8CE1E8AC4A1005ECC29 /* DatePickerTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerTextField.h; sourceTree = "<group>"; };
+		8F2CA8CF1E8AC4A1005ECC29 /* DatePickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerTextField.m; sourceTree = "<group>"; };
+		8F2CA8D11E8AD048005ECC29 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		8F2CA8D21E8AD048005ECC29 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +61,11 @@
 		8F2CA8B51E8AC47F005ECC29 /* DatePickerTextFieldDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8F2CA8CD1E8AC4A1005ECC29 /* DatePickerTextField */,
 				8F2CA8B91E8AC47F005ECC29 /* AppDelegate.h */,
 				8F2CA8BA1E8AC47F005ECC29 /* AppDelegate.m */,
-				8F2CA8BC1E8AC47F005ECC29 /* ViewController.h */,
-				8F2CA8BD1E8AC47F005ECC29 /* ViewController.m */,
+				8F2CA8D11E8AD048005ECC29 /* MainTableViewController.h */,
+				8F2CA8D21E8AD048005ECC29 /* MainTableViewController.m */,
 				8F2CA8BF1E8AC47F005ECC29 /* Main.storyboard */,
 				8F2CA8C21E8AC47F005ECC29 /* Assets.xcassets */,
 				8F2CA8C41E8AC47F005ECC29 /* LaunchScreen.storyboard */,
@@ -77,6 +81,15 @@
 				8F2CA8B71E8AC47F005ECC29 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F2CA8CD1E8AC4A1005ECC29 /* DatePickerTextField */ = {
+			isa = PBXGroup;
+			children = (
+				8F2CA8CE1E8AC4A1005ECC29 /* DatePickerTextField.h */,
+				8F2CA8CF1E8AC4A1005ECC29 /* DatePickerTextField.m */,
+			);
+			path = DatePickerTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +164,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F2CA8BE1E8AC47F005ECC29 /* ViewController.m in Sources */,
+				8F2CA8D31E8AD048005ECC29 /* MainTableViewController.m in Sources */,
+				8F2CA8D01E8AC4A1005ECC29 /* DatePickerTextField.m in Sources */,
 				8F2CA8BB1E8AC47F005ECC29 /* AppDelegate.m in Sources */,
 				8F2CA8B81E8AC47F005ECC29 /* main.m in Sources */,
 			);
