@@ -23,5 +23,4 @@ Pod::Spec.new do |s|
   s.source        = { :git => "https://github.com/JavenZ/DatePickerTextField.git", :tag => "1.0.0" }
   s.source_files  = "DatePickerTextFieldDemo/DatePickerTextField/*.{h,m}"
   s.framework  = "UIKit"
-
 end
