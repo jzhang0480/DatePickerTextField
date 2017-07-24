@@ -22,7 +22,9 @@
     [super viewDidLoad];
     //隐藏光标
     self.ymdhms.tintColor = [UIColor clearColor];
+    //设置选择的日期格式
     self.ymdhms.type = DateTextFieldTime;
+    //设置可选的日期范围
     self.ymdhms.rangeType  = DateTextFieldRangeBefore;
     
     self.ymd.type = DateTextFieldYearMonthDay;
