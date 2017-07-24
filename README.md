@@ -1,5 +1,7 @@
 ## DatePickerTextField
+
 一个好用的时间选择框
+
 ![image](https://github.com/JavenZ/DatePickerTextField/blob/master/QQ20170724-113117.gif?raw=true)
 
 之前做时间选择框的时候，都感觉不方便，需要自己控制它的弹出和收起，后来发现使用UITextField来做比较方便，于是就简单封装了下，以便使用。
