@@ -38,7 +38,7 @@ typedef NS_ENUM(NSInteger, DateTextFieldRange) {
     DateTextFieldRangeAfter
 };
 
-@interface ZJDatePickerTextField : UITextField
+@interface DatePickerTextField : UITextField
 @property (nonatomic, assign) DateTextFieldType type;
 @property (nonatomic, assign) DateTextFieldRange rangeType;
 @property (nonatomic, copy) void (^blockEndEdit)(void);

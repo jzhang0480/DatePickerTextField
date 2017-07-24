@@ -7,11 +7,11 @@
 //
 
 #import "MainTableViewController.h"
-#import "ZJDatePickerTextField.h"
+#import "DatePickerTextField.h"
 @interface MainTableViewController ()
-@property (weak, nonatomic) IBOutlet ZJDatePickerTextField *ymdhms;
-@property (weak, nonatomic) IBOutlet ZJDatePickerTextField *ymd;
-@property (weak, nonatomic) IBOutlet ZJDatePickerTextField *ym;
+@property (weak, nonatomic) IBOutlet DatePickerTextField *ymdhms;
+@property (weak, nonatomic) IBOutlet DatePickerTextField *ymd;
+@property (weak, nonatomic) IBOutlet DatePickerTextField *ym;
 
 @end
 

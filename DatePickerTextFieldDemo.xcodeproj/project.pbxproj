@@ -12,7 +12,7 @@
 		8F2CA8C11E8AC47F005ECC29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F2CA8BF1E8AC47F005ECC29 /* Main.storyboard */; };
 		8F2CA8C31E8AC47F005ECC29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F2CA8C21E8AC47F005ECC29 /* Assets.xcassets */; };
 		8F2CA8C61E8AC47F005ECC29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F2CA8C41E8AC47F005ECC29 /* LaunchScreen.storyboard */; };
-		8F2CA8D01E8AC4A1005ECC29 /* ZJDatePickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2CA8CF1E8AC4A1005ECC29 /* ZJDatePickerTextField.m */; };
+		8F2CA8D01E8AC4A1005ECC29 /* DatePickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2CA8CF1E8AC4A1005ECC29 /* DatePickerTextField.m */; };
 		8F2CA8D31E8AD048005ECC29 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2CA8D21E8AD048005ECC29 /* MainTableViewController.m */; };
 		EE50C9CB85E04C5C9CBB17EC /* libPods-DatePickerTextFieldDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33461B743D442661F094369A /* libPods-DatePickerTextFieldDemo.a */; };
 /* End PBXBuildFile section */
@@ -27,8 +27,8 @@
 		8F2CA8C21E8AC47F005ECC29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F2CA8C51E8AC47F005ECC29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F2CA8C71E8AC47F005ECC29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F2CA8CE1E8AC4A1005ECC29 /* ZJDatePickerTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJDatePickerTextField.h; sourceTree = "<group>"; };
-		8F2CA8CF1E8AC4A1005ECC29 /* ZJDatePickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJDatePickerTextField.m; sourceTree = "<group>"; };
+		8F2CA8CE1E8AC4A1005ECC29 /* DatePickerTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerTextField.h; sourceTree = "<group>"; };
+		8F2CA8CF1E8AC4A1005ECC29 /* DatePickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerTextField.m; sourceTree = "<group>"; };
 		8F2CA8D11E8AD048005ECC29 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		8F2CA8D21E8AD048005ECC29 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		A354DFB25CE911C549668AA4 /* Pods-DatePickerTextFieldDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatePickerTextFieldDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DatePickerTextFieldDemo/Pods-DatePickerTextFieldDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,8 +101,8 @@
 		8F2CA8CD1E8AC4A1005ECC29 /* DatePickerTextField */ = {
 			isa = PBXGroup;
 			children = (
-				8F2CA8CE1E8AC4A1005ECC29 /* ZJDatePickerTextField.h */,
-				8F2CA8CF1E8AC4A1005ECC29 /* ZJDatePickerTextField.m */,
+				8F2CA8CE1E8AC4A1005ECC29 /* DatePickerTextField.h */,
+				8F2CA8CF1E8AC4A1005ECC29 /* DatePickerTextField.m */,
 			);
 			path = DatePickerTextField;
 			sourceTree = "<group>";
@@ -240,7 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F2CA8D31E8AD048005ECC29 /* MainTableViewController.m in Sources */,
-				8F2CA8D01E8AC4A1005ECC29 /* ZJDatePickerTextField.m in Sources */,
+				8F2CA8D01E8AC4A1005ECC29 /* DatePickerTextField.m in Sources */,
 				8F2CA8BB1E8AC47F005ECC29 /* AppDelegate.m in Sources */,
 				8F2CA8B81E8AC47F005ECC29 /* main.m in Sources */,
 			);

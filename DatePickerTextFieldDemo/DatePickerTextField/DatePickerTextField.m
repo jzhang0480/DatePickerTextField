@@ -5,14 +5,14 @@
 //  Copyright © 2016年 Javen. All rights reserved.
 //
 
-#import "ZJDatePickerTextField.h"
+#import "DatePickerTextField.h"
 
-@interface ZJDatePickerTextField () <UITextFieldDelegate>
+@interface DatePickerTextField () <UITextFieldDelegate>
 @property (strong, nonatomic) UIDatePicker *datePicker;
 
 @end
 
-@implementation ZJDatePickerTextField
+@implementation DatePickerTextField
 
 - (void)awakeFromNib {
     [super awakeFromNib];
