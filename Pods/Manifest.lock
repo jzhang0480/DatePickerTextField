@@ -1,0 +1,12 @@
+PODS:
+  - IQKeyboardManager (4.0.10)
+
+DEPENDENCIES:
+  - IQKeyboardManager (~> 4.0.10)
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 593ee99b88381f4b9ccb22bd680f22606351bd41
+
+PODFILE CHECKSUM: fb9e193255d23487faa52395de6946f0f2bbddda
+
+COCOAPODS: 1.2.1

@@ -10,10 +10,10 @@ Pod::Spec.new do |s|
 
 
   s.name         = "DatePickerTextField"
-  s.version      = "1.0.0"
-  s.summary      = "DatePickerTextField选择时间"
+  s.version      = "1.0.1"
+  s.summary      = "ZJDatePickerTextField选择时间"
   s.description  = <<-DESC
-  DatePickerTextField选择时间，快速选择
+  								 ZJDatePickerTextField选择时间，快速选择
 	DESC
   s.homepage     = "https://github.com/JavenZ/DatePickerTextField"
   s.license      = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
@@ -34,6 +34,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.requires_arc  = true
   s.source        = { :git => "https://github.com/JavenZ/DatePickerTextField.git", :tag => "1.0.0" }
-  s.source_files  = "DatePickerTextFieldDemo/DatePickerTextField/*.{h,m}"
+  s.source_files  = "ZJDatePickerTextFieldDemo/ZJDatePickerTextField/*.{h,m}"
   s.framework  = "UIKit"
 end

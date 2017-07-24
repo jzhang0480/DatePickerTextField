@@ -7,11 +7,11 @@
 //
 
 #import "MainTableViewController.h"
-#import "DatePickerTextField.h"
+#import "ZJDatePickerTextField.h"
 @interface MainTableViewController ()
-@property (weak, nonatomic) IBOutlet DatePickerTextField *ymdhms;
-@property (weak, nonatomic) IBOutlet DatePickerTextField *ymd;
-@property (weak, nonatomic) IBOutlet DatePickerTextField *ym;
+@property (weak, nonatomic) IBOutlet ZJDatePickerTextField *ymdhms;
+@property (weak, nonatomic) IBOutlet ZJDatePickerTextField *ymd;
+@property (weak, nonatomic) IBOutlet ZJDatePickerTextField *ym;
 
 @end
 
@@ -28,6 +28,9 @@
     self.ym.type = DateTextFieldYearMonth;
     self.ym.rangeType = DateTextFieldRangeUnLimited;
     
+    self.ym.blockEndEdit = ^{
+        NSLog(@"end");
+    };
     
     //注：如果需要在datePicker上加toolBar的话，直接使用iqkeyboardmanager即可
 }
