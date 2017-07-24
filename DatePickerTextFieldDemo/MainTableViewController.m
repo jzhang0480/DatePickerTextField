@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet DatePickerTextField *ymdhms;
 @property (weak, nonatomic) IBOutlet DatePickerTextField *ymd;
 @property (weak, nonatomic) IBOutlet DatePickerTextField *ym;
+@property (weak, nonatomic) IBOutlet DatePickerTextField *other;
 
 @end
 
@@ -19,6 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //隐藏光标
+    self.ymdhms.tintColor = [UIColor clearColor];
     self.ymdhms.type = DateTextFieldTime;
     self.ymdhms.rangeType  = DateTextFieldRangeBefore;
     
@@ -32,7 +35,12 @@
         NSLog(@"end");
     };
     
+    self.other.type = DateTextFieldTime;
+    self.other.rangeType  = DateTextFieldRangeBefore;
     //注：如果需要在datePicker上加toolBar的话，直接使用iqkeyboardmanager即可
+}
+- (IBAction)chooseDate:(id)sender {
+    [self.other becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {

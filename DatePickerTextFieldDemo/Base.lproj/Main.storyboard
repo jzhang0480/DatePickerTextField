@@ -61,7 +61,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YearMonthDayTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDg-zO-xgJ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YearMonthDay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDg-zO-xgJ">
                                                     <rect key="frame" x="20" y="0.0" width="160" height="43.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="160" id="Mbz-Q1-j3N"/>
@@ -95,7 +95,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YearMonthDayTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Teg-ai-KQR">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YearMonth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Teg-ai-KQR">
                                                     <rect key="frame" x="20" y="0.0" width="160" height="43.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="160" id="FhW-im-rCF"/>
@@ -122,6 +122,46 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="C11-i6-bYn">
+                                        <rect key="frame" x="0.0" y="132" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C11-i6-bYn" id="MCk-jl-nny">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bFX-wu-93C" customClass="DatePickerTextField">
+                                                    <rect key="frame" x="20" y="0.0" width="160" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="160" id="HOM-0I-9eO"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugK-Zc-zVF">
+                                                    <rect key="frame" x="235" y="8" width="100" height="28"/>
+                                                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="OTs-Uw-Phe"/>
+                                                    </constraints>
+                                                    <state key="normal" title="choose date"/>
+                                                    <connections>
+                                                        <action selector="chooseDate:" destination="5ML-ye-NV2" eventType="touchUpInside" id="BDJ-Hk-3xd"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ugK-Zc-zVF" firstAttribute="top" secondItem="MCk-jl-nny" secondAttribute="top" constant="8" id="1df-gJ-Luo"/>
+                                                <constraint firstItem="bFX-wu-93C" firstAttribute="top" secondItem="MCk-jl-nny" secondAttribute="top" id="25U-NQ-zFf"/>
+                                                <constraint firstItem="bFX-wu-93C" firstAttribute="leading" secondItem="MCk-jl-nny" secondAttribute="leading" constant="20" id="2xO-iD-MM0"/>
+                                                <constraint firstAttribute="bottom" secondItem="bFX-wu-93C" secondAttribute="bottom" id="C5f-Jr-ZU1"/>
+                                                <constraint firstAttribute="trailing" secondItem="ugK-Zc-zVF" secondAttribute="trailing" constant="40" id="czE-vT-Xdz"/>
+                                                <constraint firstAttribute="bottom" secondItem="ugK-Zc-zVF" secondAttribute="bottom" constant="8" id="ilN-Ew-Y4i"/>
+                                                <constraint firstAttribute="bottom" secondItem="bFX-wu-93C" secondAttribute="bottom" id="mhx-pd-bIA"/>
+                                                <constraint firstItem="bFX-wu-93C" firstAttribute="top" secondItem="MCk-jl-nny" secondAttribute="top" id="yS3-5q-qu6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -132,6 +172,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="9zE-Wx-NoY"/>
                     <connections>
+                        <outlet property="other" destination="bFX-wu-93C" id="7l0-hC-WRL"/>
                         <outlet property="ym" destination="fIT-mP-uRu" id="iWB-ge-oni"/>
                         <outlet property="ymd" destination="8X5-ad-VkR" id="Yta-vi-hBP"/>
                         <outlet property="ymdhms" destination="1kW-GH-SnF" id="qS6-rq-3c2"/>
@@ -139,7 +180,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yXw-4k-d5K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="598" y="-116"/>
+            <point key="canvasLocation" x="597.60000000000002" y="-116.49175412293854"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i7m-JE-Dcn">
